@@ -1,0 +1,13 @@
+#!/bin/bash
+# The original
+PS1='[\u@\h \W]\$ '
+
+# Declare the colors
+NORMAL="\[\033[m\]"
+BLACK="\[\033[0;30m\]"
+GREY="\[\033[0;30m\]"
+RED="\[\033[1;31m\]"
+GREEN="\[\033[1;32m\]"
+
+# Finally the prompt
+PS1="[${BLACK}\u \t${NORMAL}] ${BLACK}\W ${NORMAL}\$ "
