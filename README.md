@@ -4,3 +4,7 @@ gist having these files would help.
 
 Move these files into your home repo and add a dot (.) in front of their
 filenames.
+
+Also, move the setprompt to ~/bin/
+
+> $ cp setprompt ~/bin/

@@ -8,6 +8,9 @@ fi
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
+# Hand made scripts to be added to $HOME/bin
+export PATH=$PATH:$HOME/bin
+
 # setprompt script is present at $HOME/bin/setprompt
 source setprompt
 
