@@ -44,7 +44,7 @@ set smartcase
 set incsearch
 
 " Pathogen Script initialise
-execute pathogen#infect()
+"execute pathogen#infect()
 
 " More natural splits
 set splitbelow
