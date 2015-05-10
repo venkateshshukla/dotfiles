@@ -20,7 +20,9 @@ fi
 export PATH=$PATH:$HOME/bin
 
 # setprompt script is present at $HOME/bin/setprompt
-source setprompt
+if [ -f $HOME/bin/setprompt ]; then
+	source $HOME/bin/setprompt
+fi
 
 # History to be huge
 export HISTFILESIZE=20000
@@ -30,6 +32,10 @@ shopt -s histappend
 shopt -s cmdhist
 # Ignore duplicates, ls without options and builtin commands
 HISTCONTROL=ignoredups
+
+# Check window size after each command and if necessary update the values of
+# LINES and COLUMNS.
+shopt -s checkwinsize
 
 # User specific aliases and functions
 # List aliases
@@ -71,4 +77,3 @@ export PATH=$PATH:$GRADLE_HOME/bin
 alias sdk_update="android update sdk --no-ui"
 
 fortune | cowsay
-
