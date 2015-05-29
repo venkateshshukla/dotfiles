@@ -76,4 +76,4 @@ On_ICyan='\e[0;106m'    # Cyan
 On_IWhite='\e[0;107m'   # White
 
 # Finally the prompt
-PS1="[${Blue}\u@\h \t${Reset}] ${Purple}\W ${Reset}\$ "
+PS1="\[${Blue}\u@\h \t${Reset}\] ${Purple}\W ${Reset}\$ "
