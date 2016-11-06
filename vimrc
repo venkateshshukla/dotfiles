@@ -53,3 +53,7 @@ set pastetoggle=<F3>
 map <C-n> :NERDTreeToggle<CR>
 set laststatus=2
 colorscheme apprentice
+
+" Highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
