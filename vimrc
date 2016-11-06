@@ -30,6 +30,8 @@ set ignorecase
 set smartcase
 set incsearch
 
+" Curious colorscheme
+colorscheme apprentice
 
 " The default blue is just impossible to see on a black terminal
 highlight Comment ctermfg=Brown
@@ -51,8 +53,3 @@ set pastetoggle=<F3>
 "autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
 set laststatus=2
-colorscheme apprentice
-
-" Highlight trailing whitespace
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
